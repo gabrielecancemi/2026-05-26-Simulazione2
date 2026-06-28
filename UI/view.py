@@ -36,7 +36,7 @@ class View(ft.UserControl):
 
         self._page.controls.append(row1)
 
-        self._btnCammino = ft.ElevatedButton(text="Trova Cammino", on_click=self._controller.handleCammino)
+        self._btnCammino = ft.ElevatedButton(text="Trova Cammino", on_click=self._controller.handleCammino, disabled=True)
 
         row2 = ft.Row([self._btnCammino],
                       alignment=ft.MainAxisAlignment.CENTER)
